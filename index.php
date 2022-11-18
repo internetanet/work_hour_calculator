@@ -3,7 +3,7 @@ header('Content-Type: text/html; charset = utf-8');
 error_reporting(E_ALL);
 mb_internal_encoding("UTF-8");
 
-///////////////////////////////////функция вывода уведомлений
+//вывод уведомлений
 function send_notice($msg, $param = 0) {
   if ($param == 1) {
     $show = '<div class="message-green"><span class="message-text">'.$msg.'</span></div>';//зеленый фон. успешн.
@@ -14,7 +14,7 @@ function send_notice($msg, $param = 0) {
 
   echo $show.'<br>';
 }
-//////////////////////////////////////////////////////////////
+//
 
 $pay = '';
 if(isset($_POST['submit'])){
